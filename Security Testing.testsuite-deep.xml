@@ -1,0 +1,4543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="192026" name="Security Testing" >
+<node_order><![CDATA[5]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="192027" name="TestCase-001">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[38]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra nhập mật khẩu c&oacute; được che giấu kh&ocirc;ng</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>V&agrave;o trang login của OrangeHrm&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Nhập c&aacute;c k&yacute; tự&nbsp;(v&iacute; dụ: 12345678) v&agrave;o &ocirc; mật khẩu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;C&aacute;c k&yacute; tự nhập v&agrave;o trường &quot;Mật khẩu&quot; đều bị ẩn đi dưới dạng &quot;●●●●●●●●&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192031" name="TestCase-002">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[39]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra c&oacute; copy mật khẩu vừa nhập v&agrave;o &ocirc; mật khẩu được kh&ocirc;ng</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>V&agrave;o trang login của OrangeHrm&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Nhập c&aacute;c k&yacute; tự&nbsp;(v&iacute; dụ: 12345678) v&agrave;o &ocirc; mật khẩu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;C&aacute;c k&yacute; tự nhập v&agrave;o trường &quot;Mật khẩu&quot; đều bị ẩn đi dưới dạng &quot;●●●●●●●●&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>B&ocirc;i đen phần mật khẩu vừa nhập v&agrave; nhấn lệnh copy&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Paste v&agrave;o word</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Kh&ocirc;ng c&oacute; bất k&igrave; k&yacute; tự n&agrave;o hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192037" name="TestCase-003">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[40]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra user kh&ocirc;ng phải admin c&oacute; thể xem danh s&aacute;ch c&aacute;c t&agrave;i khoản kh&ocirc;ng</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Đăng nhập th&agrave;nh c&ocirc;ng bằng t&agrave;i khoản user kh&ocirc;ng phải l&agrave; admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o trang đăng nhập của OrangeHRM</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Đăng nhập bằng t&agrave;i khoản user l&agrave; nh&acirc;n vi&ecirc;n</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Đăng nhập th&agrave;nh c&ocirc;ng</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- T&igrave;m xem c&oacute; tab c&oacute; thể xem được danh s&aacute;ch c&aacute;c user hay kh&ocirc;ng</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- kh&ocirc;ng thể t&igrave;m thấy</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192042" name="TestCase-004">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[41]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Đăng nhập bằng t&agrave;i khoản kh&ocirc;ng tồn tại</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- T&agrave;i khoản đăng nhập kh&ocirc;ng tồn tại trong hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o trang đăng nhập của OrangeHRM</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Nhập username v&agrave; password</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm đăng nhập</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- invalid credentials</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192047" name="TestCase-005">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[42]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Đăng nhập bằng t&agrave;i khoản bị disabled</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- T&agrave;i khoản đăng nhập tồn tại trong hệ thống v&agrave; đang bị disabled</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o trang đăng nhập của OrangeHRM</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Nhập username v&agrave; password</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm đăng nhập</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Account disabled</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192052" name="TestCase-006">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[43]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra mật khẩu c&oacute; được hash hay kh&ocirc;ng</p>
+]]></summary>
+	<preconditions><![CDATA[<p>T&agrave;i khoản đ&atilde; đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o trang OrangeHrm</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>&nbsp;Mở c&ocirc;ng cụ MySQL Workbench&nbsp;để kết nối với database của ứng dụng</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Kết với với cơ sở dữ liệu</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Truy cập bảng &quot;users&quot; bằng lệnh&nbsp;SELECT * FROM orangehrm_mysql.ohrm_user;<br />
+&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra trường dữ liệu &quot;user_password&quot; của user</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Trường dữ liệu &quot;user_password&quot; của user được m&atilde; h&oacute;a dưới dạng<br />
+&quot;</p>
+
+<table>
+	<tbody>
+		<tr>
+			<td>$2y$12$H8sh9XC.wGZbAlQHiFi/Ae0vn7XnAIRihyyI6y1BsDpplhmrV0luW</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192058" name="TestCase-007">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[44]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>&nbsp;</p>
+
+<p>Sử dụng n&uacute;t Back của tr&igrave;nh duyệt để quay về trang OrangeHRM&nbsp;sau khi đăng xuất</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đang đăng nhập v&agrave;o trang OrangeHRM</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o Dropdown Wellcome User</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>C&aacute;c chức năng Dropdown hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o logout</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Trang web chuyển về trang login</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Nhấn n&uacute;t Back tr&ecirc;n tr&igrave;nh duyệt&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Trang vẫn hiện trang Login với t&agrave;i khoản chưa đăng nhập</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192063" name="TestCase-008">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[45]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Đăng nhập với t&agrave;i khoản đ&uacute;ng username nhưng sai mật khẩu</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- T&agrave;i khoản với username đ&oacute; đ&atilde; tồn tại trong hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o trang đăng nhập của OrangeHRM</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Nhập username (đ&uacute;ng) v&agrave; password (sai)</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm đăng nhập</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- incorrect password</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192068" name="TestCase-009">
+	<node_order><![CDATA[10]]></node_order>
+	<externalid><![CDATA[46]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Qu&ecirc;n mật khẩu với t&agrave;i khoản kh&ocirc;ng tồn tại</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Username nhập v&agrave;o kh&ocirc;ng tồn tại trong hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o trang đăng nhập của OrangeHRM</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Nhấn Forgot password</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Chuyển đến trang qu&ecirc;n mật khẩu</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập username kh&ocirc;ng tồn tại</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Invalid credetials</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192073" name="TestCase-010">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[47]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin xem mật khẩu user kh&aacute;c</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đ&atilde;&nbsp;đăng nhập v&agrave;o hệ thống th&agrave;nh c&ocirc;ng</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o tab Admin, xem danh s&aacute;ch user</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- kh&ocirc;ng hiển thị mật khẩu của user</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o tab PIM, xem danh s&aacute;ch c&aacute;c employee</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- kh&ocirc;ng hiển thị mật khẩu của c&aacute;c employee</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192077" name="TestCase-011">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[48]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra user kh&ocirc;ng phải admin c&oacute; thể xem mật khẩu c&aacute;c t&agrave;i khoản kh&aacute;c kh&ocirc;ng</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống với vai tr&ograve; kh&aacute;c admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o trang đăng nhập của OrangeHRM</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Đăng nhập t&agrave;i khoản với vai tr&ograve; kh&ocirc;ng phải l&agrave; admin</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Đăng nhập th&agrave;nh c&ocirc;ng</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- T&igrave;m kiếm c&aacute;c tab n&agrave;o c&oacute; thể xem mật khẩu c&aacute;c t&agrave;i khoản kh&aacute;c hay kh&ocirc;ng</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Kh&ocirc;ng thể t&igrave;m thấy</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192082" name="TestCase-012">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[49]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra user kh&ocirc;ng phải admin c&oacute; thể lương c&aacute;c user kh&aacute;c hay kh&ocirc;ng</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống với vai tr&ograve; kh&aacute;c admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o trang đăng nhập của OrangeHRM</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Đăng nhập t&agrave;i khoản với vai tr&ograve; kh&ocirc;ng phải l&agrave; admin</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Đăng nhập th&agrave;nh c&ocirc;ng</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- T&igrave;m kiếm c&aacute;c tab n&agrave;o c&oacute; thể xem lương của c&aacute;c user kh&aacute;c hay kh&ocirc;ng</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Kh&ocirc;ng thể t&igrave;m thấy</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192087" name="TestCase-013">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[50]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin chỉnh sửa th&ocirc;ng tin người d&ugrave;ng</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o tab Admin xem danh s&aacute;ch c&aacute;c user, t&igrave;m chỗ để chỉnh sửa th&ocirc;ng c&aacute; nh&acirc;n</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Kh&ocirc;ng thể t&igrave;m ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o tab PIM xem danh s&aacute;ch c&aacute;c employee, t&igrave;m chỗ để chỉnh sửa th&ocirc;ng tin của họ</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- kh&ocirc;ng thể t&igrave;m ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192091" name="TestCase-014">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[51]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin thay đổi mật khẩu của user</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o tab Admin xem danh s&aacute;ch c&aacute;c user, t&igrave;m chỗ thay đổi mật khẩu user</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Kh&ocirc;ng t&igrave;m ra</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o tab PIM xem danh s&aacute;ch c&aacute;c employee, t&igrave;m chỗ thay đổi mật khẩu user</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Kh&ocirc;ng t&igrave;m ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192095" name="TestCase-017">
+	<node_order><![CDATA[1008]]></node_order>
+	<externalid><![CDATA[52]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add job đ&atilde; tồn tại</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Tồn tại &iacute;t nhất 1 job n&agrave;o đ&oacute;</p>
+
+<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o tab Admin -&gt;Job -&gt; Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Nhập v&agrave;o Job title đ&atilde; tồn tại</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Job already exist</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192099" name="TestCase-018">
+	<node_order><![CDATA[1009]]></node_order>
+	<externalid><![CDATA[53]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add Pay Grade đ&atilde; tồn tại</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Tồn tại &iacute;t nhất một Pay Grade n&agrave;o đ&oacute;</p>
+
+<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o tab Admin -&gt; Job -&gt; Pay Grade</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Điền&nbsp;Name giống với 1 Pay Grade đ&atilde; tồn tại</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Pay Grade Already exist</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192104" name="TestCase-019">
+	<node_order><![CDATA[1010]]></node_order>
+	<externalid><![CDATA[54]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m mức lương cho Pay Grade với currency kh&ocirc;ng tồn tại</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o tab Admin -&gt; Job -&gt; Pay Grade</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- GIao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add currencies</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>- Nhập v&agrave;o Currency kh&ocirc;ng hợp lệ (vd: adasfd)</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (invalid)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192110" name="TestCase-020">
+	<node_order><![CDATA[1011]]></node_order>
+	<externalid><![CDATA[55]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m mức lương cho Pay Grade với maximum salary &lt; mimimun salary</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o tab Admin -&gt; Job -&gt; Pay Grade</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- GIao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add currencies</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>- Nhập v&agrave;o Currency hợp lệ (vd: VND)</p>
+
+<p>- Nhập minimum salary: 5000000</p>
+
+<p>- Nhập maximum salary: 3000000</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (maximum salary must higher than minimum salary)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192116" name="TestCase-021">
+	<node_order><![CDATA[1012]]></node_order>
+	<externalid><![CDATA[56]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m mức lương cho Pay Grade với currencies đ&atilde; tồn tại</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o tab Admin -&gt; Job -&gt; Pay Grade</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- GIao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add currencies</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>- Nhập v&agrave;o Currency hợp lệ (vd: VND)</p>
+
+<p>- Nhập minimum salary: 5000000</p>
+
+<p>- Nhập maximum salary: 7000000</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- currencies vừa th&ecirc;m được cập nhật v&agrave;o list b&ecirc;n dưới</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>- Nhập Currency đ&atilde; tồn tại (VND)</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (currency already exist)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192123" name="TestCase-022">
+	<node_order><![CDATA[1013]]></node_order>
+	<externalid><![CDATA[57]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Employment Status đ&atilde; tồn tại</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o tab Admin -&gt; Job -&gt; Employment Status</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- GIao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Điền name n&agrave;o đ&oacute; (In Process)</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Employment status được th&ecirc;m v&agrave;o list tương ứng b&ecirc;n dưới</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+
+<p>- Điền name như tr&ecirc;n (In Process)</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (Employmeny Status Already exist)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192129" name="TestCase-023">
+	<node_order><![CDATA[1014]]></node_order>
+	<externalid><![CDATA[58]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Job Categories đ&atilde; tồn tại</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o tab Admin -&gt; Job -&gt; Job Categories</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- GIao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Điền name n&agrave;o đ&oacute; đ&atilde; tồn tại ở list b&ecirc;n dưới (Craft Workers)</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (already exist)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192134" name="TestCase-024">
+	<node_order><![CDATA[1015]]></node_order>
+	<externalid><![CDATA[59]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add work shift c&oacute; khoảng thời gian tr&ugrave;ng với work shift đ&atilde; tồn tại</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o tab Admin -&gt; Job -&gt; Work Shift</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- GIao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Shift name (Day)</p>
+
+<p>- Work hour (9h00-17h00)</p>
+
+<p>- Bấm save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Shift mới th&ecirc;m sẽ hiện thị ở list b&ecirc;n dưới</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add shift kh&aacute;c</p>
+
+<p>- Nhập Shift Name (Night)</p>
+
+<p>- Work hour (9h00-17h00)</p>
+
+<p>- Bấm save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (Khoảng thời gian đ&atilde; tồn tại)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192140" name="TestCase-025">
+	<node_order><![CDATA[1016]]></node_order>
+	<externalid><![CDATA[60]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add work shift name đ&atilde; tồn tại</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o tab Admin -&gt; Job -&gt; Work Shift</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- GIao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Shift name (Day)</p>
+
+<p>- Work hour (9h00-17h00)</p>
+
+<p>- Bấm save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Shift mới th&ecirc;m sẽ hiện thị ở list b&ecirc;n dưới</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add shift kh&aacute;c</p>
+
+<p>- Nhập Shift Name đ&atilde; tồn tại (Day)</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (already exist)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192146" name="TestCase-026">
+	<node_order><![CDATA[1017]]></node_order>
+	<externalid><![CDATA[61]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add locations của organization đ&atilde; tồn tại</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Organization -&gt; Locations</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Name: Location 01</p>
+
+<p>- Nhập Country: Viet Nam</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Location tương ứng vừa được tạo</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+
+<p>- Nhập Name: Location 01</p>
+
+<p>- Nhập Country: Viet Nam</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (Name already exist)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192152" name="TestCase-027">
+	<node_order><![CDATA[1018]]></node_order>
+	<externalid><![CDATA[62]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add unit organization đ&atilde; tồn tại</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Organization -&gt; Structure</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Edit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm +</p>
+
+<p>- Nhập Id: 01</p>
+
+<p>- Nhập Name: K2&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (already exist)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192157" name="TestCase-028">
+	<node_order><![CDATA[1019]]></node_order>
+	<externalid><![CDATA[63]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add Qualification-Skill đ&atilde; tồn tại</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Qualifications -&gt; Skills</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Name: Skill 01</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Skill vừa nhập sẽ hiện ở list b&ecirc;n dưới</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+
+<p>- Nhập Name: Skill 01</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (already exist)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192163" name="TestCase-029">
+	<node_order><![CDATA[1020]]></node_order>
+	<externalid><![CDATA[64]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add Qualification-Education đ&atilde; tồn tại</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Qualifications -&gt; Education</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Level: 01</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Skill vừa nhập sẽ hiện ở list b&ecirc;n dưới</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+
+<p>- Nhập level: 01</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (already exist)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192169" name="TestCase-030">
+	<node_order><![CDATA[1021]]></node_order>
+	<externalid><![CDATA[65]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add Qualification-License đ&atilde; tồn tại</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Qualifications -&gt; Licenses</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Name: license 01</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- License&nbsp;vừa nhập sẽ hiện ở list b&ecirc;n dưới</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+
+<p>- Nhập Name: License 01</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (already exist)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192175" name="TestCase-031">
+	<node_order><![CDATA[1022]]></node_order>
+	<externalid><![CDATA[66]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add Qualification-Language đ&atilde; tồn tại</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Qualifications -&gt; Languages</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Name: VN</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Language vừa nhập sẽ hiện ở list b&ecirc;n dưới</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+
+<p>- Nhập Name: VN</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (already exist)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192181" name="TestCase-032">
+	<node_order><![CDATA[1023]]></node_order>
+	<externalid><![CDATA[67]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add Qualification-memberships đ&atilde; tồn tại</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Qualifications -&gt; Memberships</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Name: Memberships 01</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Membership&nbsp;vừa nhập sẽ hiện ở list b&ecirc;n dưới</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+
+<p>- Nhập Name: Membership 01</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (already exist)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192187" name="TestCase-033">
+	<node_order><![CDATA[1024]]></node_order>
+	<externalid><![CDATA[68]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add Nationalities&nbsp;đ&atilde; tồn tại</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Nationalities</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Name: American</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (already exist)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192192" name="TestCase-034">
+	<node_order><![CDATA[1025]]></node_order>
+	<externalid><![CDATA[69]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add user nhưng thiếu Employee Name</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; User Management</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Username: U01</p>
+
+<p>- Nhập Password: @Mm12345</p>
+
+<p>- Nhập Confirm Password: @Mm12345</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Employee Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192197" name="TestCase-035">
+	<node_order><![CDATA[1026]]></node_order>
+	<externalid><![CDATA[70]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add user nhưng thiếu Username</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; User Management</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Employee Name: &lt;employee name hợp lệ&gt;</p>
+
+<p>- Nhập Password: @Mm12345</p>
+
+<p>- Nhập Confirm Password: @Mm12345</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Username)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192202" name="TestCase-036">
+	<node_order><![CDATA[1027]]></node_order>
+	<externalid><![CDATA[71]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add user nhưng thiếu Password</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; User Management</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Employee Name: &lt;employee name hợp lệ&gt;</p>
+
+<p>- Nhập Username: U01</p>
+
+<p>- Nhập Confirm Password: @Mm12345</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Password)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192207" name="TestCase-037">
+	<node_order><![CDATA[1028]]></node_order>
+	<externalid><![CDATA[72]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add user nhưng thiếu Confirm&nbsp;Password</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; User Management</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Employee Name: &lt;employee name hợp lệ&gt;</p>
+
+<p>- Nhập Username: U01</p>
+
+<p>- Nhập Password: @Mm12345</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (Confirm&nbsp;Password not match)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192212" name="TestCase-038">
+	<node_order><![CDATA[1029]]></node_order>
+	<externalid><![CDATA[73]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add user nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; User Management</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require &lt;c&aacute;c field trống&gt;)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192217" name="TestCase-039">
+	<node_order><![CDATA[1030]]></node_order>
+	<externalid><![CDATA[74]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add job title nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Job -&gt; Job Title</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Job Title)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192222" name="TestCase-040">
+	<node_order><![CDATA[1031]]></node_order>
+	<externalid><![CDATA[75]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add Pay Grade nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Job -&gt; Pay Grade</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192227" name="TestCase-041">
+	<node_order><![CDATA[1032]]></node_order>
+	<externalid><![CDATA[76]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add Pay Grade-Currency&nbsp;nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Job -&gt; Pay Grade</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Name: Grade 01</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Grade vừa nhập sẽ xuất hiện ở list b&ecirc;n dưới</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add Currency</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi: (require Currency)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192233" name="TestCase-042">
+	<node_order><![CDATA[1033]]></node_order>
+	<externalid><![CDATA[77]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add Pay Employment Status&nbsp;nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Job -&gt; Employment Status</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192238" name="TestCase-043">
+	<node_order><![CDATA[1034]]></node_order>
+	<externalid><![CDATA[78]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add Job Categories&nbsp;nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Job -&gt; Job Categories</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192243" name="TestCase-044">
+	<node_order><![CDATA[1035]]></node_order>
+	<externalid><![CDATA[79]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add Work Shift&nbsp;nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Job -&gt; Job Categories</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Shift Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192248" name="TestCase-045">
+	<node_order><![CDATA[1036]]></node_order>
+	<externalid><![CDATA[80]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add Work Shift&nbsp;nhưng gửi form thiếu Shift Name</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Job -&gt; Job Categories</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Shift Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192253" name="TestCase-046">
+	<node_order><![CDATA[1037]]></node_order>
+	<externalid><![CDATA[81]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add Work Shift&nbsp;nhưng gửi form thiếu Work Hour</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Job -&gt; Job Categories</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Shift Name: Day</p>
+
+<p>- Sửa Work Hour From: &lt;trống&gt;</p>
+
+<p>- Sửa Work Hour To: &lt;trống&gt;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (Work Hour)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192258" name="TestCase-047">
+	<node_order><![CDATA[1038]]></node_order>
+	<externalid><![CDATA[82]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add Work Shift&nbsp;nhưng gửi form thiếu Work Hour from</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Job -&gt; Job Categories</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Shift Name: Day</p>
+
+<p>- Sửa Work Hour From: &lt;trống&gt;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Work Hour)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192263" name="TestCase-048">
+	<node_order><![CDATA[1039]]></node_order>
+	<externalid><![CDATA[83]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin add Work Shift&nbsp;nhưng gửi form thiếu Work Hour to</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Job -&gt; Job Categories</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Shift Name: Day</p>
+
+<p>- Sửa Work Hour To: &lt;trống&gt;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Work Hour)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192268" name="TestCase-049">
+	<node_order><![CDATA[1040]]></node_order>
+	<externalid><![CDATA[84]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin Chỉnh sửa Organization-General Infomation nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Organization -&gt; General Infomation</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Edit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- C&aacute;c textbox mất chế độ read-only</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- X&oacute;a Organization name</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Organization Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192273" name="TestCase-050">
+	<node_order><![CDATA[1041]]></node_order>
+	<externalid><![CDATA[85]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Organization-Locations nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Organization -&gt; Locations</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Name, Country)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192278" name="TestCase-051">
+	<node_order><![CDATA[1042]]></node_order>
+	<externalid><![CDATA[86]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Organization-Locations nhưng gửi form thiếu Name</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Organization -&gt; Locations</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Chọn Country: Viet Nam</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192283" name="TestCase-052">
+	<node_order><![CDATA[1043]]></node_order>
+	<externalid><![CDATA[87]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Organization-Structure nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Organization -&gt; Locations</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Edit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm +</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192289" name="TestCase-053">
+	<node_order><![CDATA[1044]]></node_order>
+	<externalid><![CDATA[88]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Organization-Locations nhưng gửi form thiếu Country</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Organization -&gt; Locations</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Name: location 01</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Country)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192294" name="TestCase-054">
+	<node_order><![CDATA[1045]]></node_order>
+	<externalid><![CDATA[89]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Qualification-Skill&nbsp;nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Qualification -&gt; Skill</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192299" name="TestCase-055">
+	<node_order><![CDATA[1046]]></node_order>
+	<externalid><![CDATA[90]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Qualification-Education nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Qualification -&gt; Qualificaion</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Level)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192304" name="TestCase-056">
+	<node_order><![CDATA[1047]]></node_order>
+	<externalid><![CDATA[91]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Qualification-Licenses&nbsp;nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Qualification -&gt; Skill</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192309" name="TestCase-057">
+	<node_order><![CDATA[1048]]></node_order>
+	<externalid><![CDATA[92]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Qualification-Language&nbsp;nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Qualification -&gt; Language</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192314" name="TestCase-058">
+	<node_order><![CDATA[1049]]></node_order>
+	<externalid><![CDATA[93]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Qualification-Membership&nbsp;nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Qualification -&gt; Membership</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192319" name="TestCase-059">
+	<node_order><![CDATA[1050]]></node_order>
+	<externalid><![CDATA[94]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Nationalities&nbsp;nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Nationalities</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192324" name="TestCase-060">
+	<node_order><![CDATA[1051]]></node_order>
+	<externalid><![CDATA[95]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Provider nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Configuration -&gt; Social Media Authentication</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Name, Url)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192329" name="TestCase-061">
+	<node_order><![CDATA[1052]]></node_order>
+	<externalid><![CDATA[96]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Provider nhưng gửi form thiếu Name</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Configuration -&gt; Social Media Authentication</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Url:&nbsp;https://www.youtube.com/</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192334" name="TestCase-062">
+	<node_order><![CDATA[1053]]></node_order>
+	<externalid><![CDATA[97]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Provider nhưng gửi form thiếu Name</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Configuration -&gt; Social Media Authentication</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Name: 01</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Url)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192339" name="TestCase-063">
+	<node_order><![CDATA[1054]]></node_order>
+	<externalid><![CDATA[98]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Provider c&oacute; Name đ&atilde; tồn tại</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Configuration -&gt; Social Media Authentication</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Name: 01</p>
+
+<p>- Nhập Url:&nbsp;https://www.youtube.com/</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Provider mới nhập sẽ hiển thị ở list b&ecirc;n dưới</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+
+<p>- Nhập Name: 01</p>
+
+<p>- Nhập Url:&nbsp;https://www.youtube.com/1111</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (Name Already exist)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192345" name="TestCase-064">
+	<node_order><![CDATA[1055]]></node_order>
+	<externalid><![CDATA[99]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Provider nhưng tr&ugrave;ng Url</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Configuration -&gt; Social Media Authentication</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Name: 01</p>
+
+<p>- Nhập Url:&nbsp;https://www.youtube.com/</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Provider vừa nhập sẽ hiển thị b&ecirc;n dưới</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+
+<p>- Nhập Name 02:</p>
+
+<p>- Nhập Url:&nbsp;https://www.youtube.com/</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (Url Already exist)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192351" name="TestCase-065">
+	<node_order><![CDATA[1056]]></node_order>
+	<externalid><![CDATA[100]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin Edit Provider nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Configuration -&gt; Social Media Authentication</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Name: 01</p>
+
+<p>- Nhập Url:&nbsp;https://www.youtube.com/</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Provider vừa nhập sẽ hiển thị b&ecirc;n dưới</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>- Bấm v&agrave;o Provider 01 vừa tạo ở list</p>
+
+<p>- X&oacute;a dữ liệu &ocirc; Name</p>
+
+<p>- X&oacute;a dữ liệu &ocirc; Url</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Name, Url)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192357" name="TestCase-066">
+	<node_order><![CDATA[1057]]></node_order>
+	<externalid><![CDATA[101]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin Edit Provider nhưng gửi form thiếu Name</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Configuration -&gt; Social Media Authentication</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Name: 01</p>
+
+<p>- Nhập Url:&nbsp;https://www.youtube.com/</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Provider vừa nhập sẽ hiển thị b&ecirc;n dưới</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>- Bấm v&agrave;o Provider 01 vừa tạo ở list</p>
+
+<p>- X&oacute;a dữ liệu &ocirc; Name</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192363" name="TestCase-067">
+	<node_order><![CDATA[1058]]></node_order>
+	<externalid><![CDATA[102]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin Edit Provider nhưng gửi form thiếu Url</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Configuration -&gt; Social Media Authentication</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Name: 01</p>
+
+<p>- Nhập Url:&nbsp;https://www.youtube.com/</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Provider vừa nhập sẽ hiển thị b&ecirc;n dưới</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>- Bấm v&agrave;o Provider 01 vừa tạo ở list</p>
+
+<p>- X&oacute;a dữ liệu &ocirc; Url</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Url)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192369" name="TestCase-068">
+	<node_order><![CDATA[1059]]></node_order>
+	<externalid><![CDATA[103]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m OAuth Client&nbsp;nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Configuration -&gt; Register OAuth Client</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require ID, Secret)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192373" name="TestCase-069">
+	<node_order><![CDATA[1060]]></node_order>
+	<externalid><![CDATA[104]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m OAuth Client&nbsp;nhưng gửi form thiếu ID</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Configuration -&gt; Register OAuth Client</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Nhập Secret: Secret 01</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require ID)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192377" name="TestCase-070">
+	<node_order><![CDATA[1061]]></node_order>
+	<externalid><![CDATA[105]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m OAuth Client&nbsp;nhưng gửi form thiếu field Secret</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Configuration -&gt; Register OAuth Client</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Nhập ID: 001</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require&nbsp;Secret field)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192381" name="TestCase-071">
+	<node_order><![CDATA[1062]]></node_order>
+	<externalid><![CDATA[106]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m OAuth Client với Secret field đ&atilde; tồn tại</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Configuration -&gt; Register OAuth Client</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Nhập ID: 001</p>
+
+<p>- Nhập Secret: Secret 01</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- OAuth Client vừa tạo sẽ hiển thị ở list b&ecirc;n dưới</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập ID: 00111</p>
+
+<p>- Nhập Secret: Secret 01</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (Secret field&nbsp;Already exist)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192386" name="TestCase-072">
+	<node_order><![CDATA[1063]]></node_order>
+	<externalid><![CDATA[107]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m OAuth Client với ID đ&atilde; tồn tại</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Admin -&gt; Configuration -&gt; Register OAuth Client</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Nhập ID: 001</p>
+
+<p>- Nhập Secret: Secret 01</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- OAuth Client vừa tạo sẽ hiển thị ở list b&ecirc;n dưới</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập ID: 001</p>
+
+<p>- Nhập Secret: Secret 0111</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (ID Already exist)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192391" name="TestCase-073">
+	<node_order><![CDATA[1064]]></node_order>
+	<externalid><![CDATA[108]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Custom Field ở PIM Configuration nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab PIM-&gt; Configuration -&gt; Custom Field</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Field Name, Screen, Type)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192395" name="TestCase-074">
+	<node_order><![CDATA[1065]]></node_order>
+	<externalid><![CDATA[109]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Custom Field ở PIM Configuration nhưng gửi form thiếu Field Name</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab PIM-&gt; Configuration -&gt; Custom Field</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Chọn Screen: Personal Details</p>
+
+<p>- Chọn Type: Text or Number</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Field Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192399" name="TestCase-075">
+	<node_order><![CDATA[1066]]></node_order>
+	<externalid><![CDATA[110]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Custom Field ở PIM Configuration nhưng gửi form thiếu Screen</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab PIM-&gt; Configuration -&gt; Custom Field</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Nhập Field Name: 01</p>
+
+<p>- Chọn Type: Text or Number</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Screen)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192403" name="TestCase-076">
+	<node_order><![CDATA[1067]]></node_order>
+	<externalid><![CDATA[111]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Custom Field ở PIM Configuration nhưng gửi form thiếu Type</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab PIM-&gt; Configuration -&gt; Custom Field</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Nhập Field Name: 01</p>
+
+<p>- Chọn Screen: Personal Details</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Type)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192407" name="TestCase-077">
+	<node_order><![CDATA[1068]]></node_order>
+	<externalid><![CDATA[112]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Data import ở PIM Configuration nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab PIM-&gt; Configuration -&gt; Data Import</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require File)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192411" name="TestCase-078">
+	<node_order><![CDATA[1069]]></node_order>
+	<externalid><![CDATA[113]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Report Method ở PIM Configuration nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab PIM-&gt; Configuration -&gt; Reporting Methods</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192415" name="TestCase-079">
+	<node_order><![CDATA[1070]]></node_order>
+	<externalid><![CDATA[114]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Data import ở PIM Configuration đ&atilde; tồn tại</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab PIM-&gt; Configuration -&gt; Reporting Methods</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Nhập Name: Direct</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (Name already exist)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192419" name="TestCase-080">
+	<node_order><![CDATA[1071]]></node_order>
+	<externalid><![CDATA[115]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Termination reason ở PIM Configuration nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab PIM-&gt; Configuration -&gt; Termination Reasons</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192423" name="TestCase-081">
+	<node_order><![CDATA[1072]]></node_order>
+	<externalid><![CDATA[116]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Termination reason ở PIM Configuration đ&atilde; tồn tại</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab PIM-&gt; Configuration -&gt; Termination Reasons</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Nhập Name: Resigned</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (Name already exist)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192427" name="TestCase-082">
+	<node_order><![CDATA[1073]]></node_order>
+	<externalid><![CDATA[117]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Employee nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab PIM-&gt; Employee list</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng sẽ hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (Require First Name, Last Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192432" name="TestCase-083">
+	<node_order><![CDATA[1074]]></node_order>
+	<externalid><![CDATA[118]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Employee nhưng gửi form thiếu First Name</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab PIM-&gt; Employee list</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng sẽ hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập Last Name: Nguyen</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (Require First Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192437" name="TestCase-084">
+	<node_order><![CDATA[1075]]></node_order>
+	<externalid><![CDATA[119]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Employee nhưng gửi form thiếu Last&nbsp;Name</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab PIM-&gt; Employee list</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng sẽ hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập First Name: Mad</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (Require First Name, Last Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192442" name="TestCase-085">
+	<node_order><![CDATA[1076]]></node_order>
+	<externalid><![CDATA[120]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Report&nbsp;nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab PIM-&gt; Reports</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng sẽ hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (Require Report Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192447" name="TestCase-086">
+	<node_order><![CDATA[1077]]></node_order>
+	<externalid><![CDATA[121]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Leave period nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Leave</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Thống b&aacute;o lỗi (require Start Month, Start Date)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192451" name="TestCase-087">
+	<node_order><![CDATA[1078]]></node_order>
+	<externalid><![CDATA[122]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Candidate nhưng gửi form thiếu First Name</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Recruitment -&gt; Candidates</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Nhập Last Name: Nguyen</p>
+
+<p>- Nhập Email: madnguyen111@gmail.com</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Thống b&aacute;o lỗi (require First Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192455" name="TestCase-088">
+	<node_order><![CDATA[1079]]></node_order>
+	<externalid><![CDATA[123]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Candidate nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Recruitment -&gt; Candidates</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Thống b&aacute;o lỗi (require First Name, Last Name, Email)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192459" name="TestCase-089">
+	<node_order><![CDATA[1080]]></node_order>
+	<externalid><![CDATA[124]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Candidate nhưng gửi form thiếu Last Name</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Recruitment -&gt; Candidates</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Nhập First Name: Mad</p>
+
+<p>- Nhập Email: madnguyen111@gmail.com</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Thống b&aacute;o lỗi (require Last Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192463" name="TestCase-090">
+	<node_order><![CDATA[1081]]></node_order>
+	<externalid><![CDATA[125]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Candidate nhưng gửi form thiếu Email</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Recruitment -&gt; Candidates</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Nhập First Name: Mad</p>
+
+<p>- Nhập Last Name: Nguyen</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Thống b&aacute;o lỗi (require Email)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192467" name="TestCase-091">
+	<node_order><![CDATA[1082]]></node_order>
+	<externalid><![CDATA[126]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Vacancy&nbsp;nhưng gửi form thiếu Job title</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+
+<p>- tồn tại &iacute;t nhất 1 job title</p>
+
+<p>- tồn tại &iacute;t nhất 1 hiring manager</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Recruitment -&gt; Vacancies</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Nhập Vacancy&nbsp;Name: vaca 01</p>
+
+<p>- Nhập Hiring Manager: &lt;Hiring Manager hợp lệ&gt;</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Job Title)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập First Name: Mad02</p>
+
+<p>- Nhập Last Name: Nguyen</p>
+
+<p>- Nhập Email: madnguyen111@gmail.com</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (Email Already exist)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192472" name="TestCase-092">
+	<node_order><![CDATA[1083]]></node_order>
+	<externalid><![CDATA[127]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Candidate nhưng gửi form c&oacute; Email đ&atilde; tồn tại</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Recruitment -&gt; Candidates</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Nhập First Name: Mad</p>
+
+<p>- Nhập Last Name: Nguyen</p>
+
+<p>- Nhập Email: madnguyen111@gmail.com</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Candidate vừa add sẽ xuất hiện ở list b&ecirc;n dưới</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>- Nhập First Name: Mad02</p>
+
+<p>- Nhập Last Name: Nguyen</p>
+
+<p>- Nhập Email: madnguyen111@gmail.com</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (Email Already exist)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192477" name="TestCase-093">
+	<node_order><![CDATA[1084]]></node_order>
+	<externalid><![CDATA[128]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Vacancy&nbsp;nhưng gửi form thiếu vacancy Name</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+
+<p>- tồn tại &iacute;t nhất 1 Job title</p>
+
+<p>- tồn tại &iacute;t nhất 1 hiring manager</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Recruitment -&gt; Vacancies</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Chọn Job Title ph&ugrave; hợp</p>
+
+<p>- Nhập Hiring Manager: &lt;hiring manager hợp lệ&gt;</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Vacancy Name)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192481" name="TestCase-094">
+	<node_order><![CDATA[1085]]></node_order>
+	<externalid><![CDATA[129]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Vacancy&nbsp;nhưng gửi form thiếu Hiring Manager</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+
+<p>- tồn tại &iacute;t nhất 1 job title</p>
+
+<p>- tồn tại &iacute;t nhất 1 hiring manager</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Recruitment -&gt; Candidates</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Chọn job title ph&ugrave; hợp</p>
+
+<p>- Nhập Vacancy Name: 01</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require hiring manager)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192485" name="TestCase-095">
+	<node_order><![CDATA[1086]]></node_order>
+	<externalid><![CDATA[130]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m Vacancy&nbsp;nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Recruitment -&gt; Candidates</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Job Title, Vacancy Name, Hiring Manager)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192489" name="TestCase-096">
+	<node_order><![CDATA[1087]]></node_order>
+	<externalid><![CDATA[131]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m KPIs cho Job title nhưng gửi form thiếu Job title</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+
+<p>- Tồn tại &iacute;t nhất 1 job title</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Performance -&gt; Configure -&gt; KPIs</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Nhập KPI: KPI 01</p>
+
+<p>- Nhập Minimum Rating: 1</p>
+
+<p>- Nhập Maximum Rating: 10</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Job Title)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192493" name="TestCase-097">
+	<node_order><![CDATA[1088]]></node_order>
+	<externalid><![CDATA[132]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m KPIs cho Job title nhưng gửi form thiếu KPI</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+
+<p>- Tồn tại &iacute;t nhất 1 job title</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Performance -&gt; Configure -&gt; KPIs</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Chọn 1 job title bất kỳ</p>
+
+<p>- Nhập Minimum Rating: 1</p>
+
+<p>- Nhập Maximum Rating: 10</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require KPI)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192497" name="TestCase-098">
+	<node_order><![CDATA[1089]]></node_order>
+	<externalid><![CDATA[133]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m KPIs cho Job title nhưng gửi form thiếu Minimum Rating</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+
+<p>- Tồn tại &iacute;t nhất 1 job title</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Performance -&gt; Configure -&gt; KPIs</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Chọn 1 job title bất kỳ</p>
+
+<p>- Nhập KPI: KPI 01</p>
+
+<p>- Nhập Maximum Rating: 10</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Minimum Rating)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192501" name="TestCase-099">
+	<node_order><![CDATA[1090]]></node_order>
+	<externalid><![CDATA[134]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m KPIs cho Job title nhưng gửi form thiếu Maximum Rating</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+
+<p>- Tồn tại &iacute;t nhất 1 job title</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Performance -&gt; Configure -&gt; KPIs</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Chọn 1 Job Title bất kỳ</p>
+
+<p>- Nhập KPI: KPI 01</p>
+
+<p>- Nhập Minimum Rating: 1</p>
+
+<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require maximum Rating)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="192505" name="TestCase-100">
+	<node_order><![CDATA[1091]]></node_order>
+	<externalid><![CDATA[135]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Admin th&ecirc;m KPIs cho Job title nhưng gửi form trống</p>
+]]></summary>
+	<preconditions><![CDATA[<p>- Admin đăng nhập th&agrave;nh c&ocirc;ng v&agrave;o hệ thống</p>
+
+<p>- Tồn tại &iacute;t nhất 1 job title</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>- V&agrave;o Tab Performance -&gt; Configure -&gt; KPIs</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Giao diện tương ứng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>- Bấm Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>- Th&ocirc;ng b&aacute;o lỗi (require Job Title, KPI, Minimum Rating, Maximum Rating)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite>
