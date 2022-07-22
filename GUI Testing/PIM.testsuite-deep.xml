@@ -1,0 +1,1016 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="185451" name="PIM" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="185452" name="TestCase-042">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[155]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>&nbsp;Kiểm tra đổi m&agrave;u v&agrave; con trỏ chuột chuyển th&agrave;nh b&agrave;n tay khi di chuột v&agrave;o button&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập v&agrave;o hệ thống với role: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab PIM</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn Employee List</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của Employee List</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>R&ecirc; chuột v&agrave;o c&aacute;c button trong trường PIM</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Con chuột chuyển th&agrave;nh b&agrave;n tay v&agrave; background chuyển m&agrave;u đen</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="185457" name="TestCase-043">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[156]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>&nbsp;Kiểm tra&nbsp; c&aacute;c &ocirc; check tất cả được đ&aacute;nh dấu khi check v&agrave;o &ocirc; check d&ograve;ng đầu v&agrave; đổi m&agrave;u button&nbsp; &quot;Delete&quot;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập v&agrave;o hệ thống với role: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab PIM</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn Employee List</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của Employee List</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Click&nbsp; v&agrave;o &ocirc; check trong bảng (d&ograve;ng đầu ti&ecirc;n)</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Tất cả c&aacute;c &ocirc; đều được check</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Hover con trỏ chuột v&agrave;o n&uacute;t Delete</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Button &quot;Delete&quot; sẽ đổi sang m&agrave;u đậm hơn</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="185463" name="TestCase-040">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[157]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>&nbsp;Kiểm tra đổi m&agrave;u v&agrave; con trỏ chuột chuyển th&agrave;nh b&agrave;n tay khi di chuột v&agrave;o button&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập v&agrave;o hệ thống với role: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab PIM</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn Employee List</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của Employee List</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>R&ecirc; chuột v&agrave;o c&aacute;c button trong trường PIM</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Con chuột chuyển th&agrave;nh b&agrave;n tay v&agrave; background chuyển th&agrave;nh m&agrave;u x&aacute;m</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="185468" name="TestCase-039">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[158]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra hiển thị panel Employeee&nbsp; Information</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập v&agrave;o hệ thống với role: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab PIM</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn Employee List</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của Employee List</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Click v&agrave;o mũi t&ecirc;n b&ecirc;n phải d&ograve;ng Employee Information</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Hiển thị box gợi &yacute; cho việc thu v&agrave; ph&oacute;ng c&aacute;c&nbsp;options</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="186351" name="TestCase-011">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[159]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra số k&yacute; tự tối đa trường First Name</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o OrangeHRM với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab PIM</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>H&agrave;ng menu cấp 2 của PIM hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn Add Employee</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;M&agrave;n h&igrave;nh hiển thị chức năng của Add Employee</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Nhập v&agrave;o trường Firts name c&aacute;c k&yacute; tự li&ecirc;n tục cho đến khi kh&ocirc;ng nhập được nữa</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Chỉ cho ph&eacute;p nhập tối đa 35&nbsp;k&yacute; tự v&agrave; kh&ocirc;ng cho ph&eacute;p nhập nhiều hơn</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="185473" name="TestCase-038">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[160]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra việc đổi m&agrave;u khi nhấn v&agrave;o c&aacute;c&nbsp;button</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập v&agrave;o hệ thống với role: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab PIM</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn Employee List</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của Employee List</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra c&aacute;c button khi nhấn v&agrave;o</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;u của c&aacute;c button thay đổi</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+
+
+<testcase internalid="186362" name="TestCase-010">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[161]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra trước bắt buộc c&oacute; k&yacute; hiệu required</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o OrangeHRM với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab PIM</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>H&agrave;ng menu cấp 2 của PIM hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn Add Employee</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;M&agrave;n h&igrave;nh hiển thị chức năng của Add Employee</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Tick v&agrave;o &ocirc; Create Login Details</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Quan s&aacute;t c&aacute;c trường dữ liệu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Tất cả dữ liệu bắt buộc cần c&oacute; k&yacute;&nbsp; kiệu required</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="185478" name="TestCase-037">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[162]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra số k&yacute; tự tối đa trường Employee Name&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập v&agrave;o hệ thống với role: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab PIM</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn Employee List</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của Employee List</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Nhập v&agrave;o employee name c&aacute;c k&yacute; tự cho đến khi nhập kh&ocirc;ng được nữa</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Trường employee name&nbsp; kh&ocirc;ng c&oacute;&nbsp;giới hạn số lượng k&yacute; tự</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+
+
+<testcase internalid="186374" name="TestCase-009">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[163]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra thứ tự tab hoạt động đ&uacute;ng, khi sử dụng ph&iacute;m tab chuyển đổi c&aacute;c trường dữ liệu</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o OrangeHRM với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab PIM</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>H&agrave;ng menu cấp 2 của PIM hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn Add Employee</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;M&agrave;n h&igrave;nh hiển thị chức năng của Add Employee</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Tick v&agrave;o &ocirc; Create Login Details</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Tiến h&agrave;nh bấm ph&igrave;m tab li&ecirc;n tục v&agrave; quan s&aacute;t</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Thứ tự Tab được chỉ định tr&ecirc;n m&agrave;n h&igrave;nh c&oacute; theo thứ tự từ tr&ecirc;n c&ugrave;ng b&ecirc;n tr&aacute;i đến dưới c&ugrave;ng b&ecirc;n phải kh&ocirc;ng?</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="185483" name="TestCase-036">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[164]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra giao diện c&oacute; r&otilde; r&agrave;ng, dễ hiểu kh&ocirc;ng</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập v&agrave;o hệ thống với role: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab PIM</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn Employee List</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của Employee List</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra giao diện c&oacute; đồng nhất, r&otilde; r&agrave;ng kh&ocirc;ng</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Trang web c&oacute; giao diện r&otilde; r&agrave;ng, dễ theo d&otilde;i</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+
+
+<testcase internalid="186386" name="TestCase-008">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[165]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm &nbsp;tra sự canh chỉnh tất cả c&aacute;c field&nbsp; phải được căn chỉnh ch&iacute;nh x&aacute;c</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o OrangeHRM với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab PIM</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>H&agrave;ng menu cấp 2 của PIM hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn Add Employee</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;M&agrave;n h&igrave;nh hiển thị chức năng của Add Employee</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Click chọn v&agrave;o &ocirc; Create Login Details</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Phần th&ocirc;ng tin t&agrave;i khoản xuất hiện gồm c&aacute;c trường User name, password, confirm password v&agrave; status</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Quan s&aacute;t k&iacute;ch thước c&aacute;c field input</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>C&aacute;c field input được canh chỉnh k&iacute;ch thước hợp l&yacute;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="185488" name="TestCase-035">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[166]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra li&ecirc;n kết với c&aacute;c trang web kh&aacute;c</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập v&agrave;o hệ thống với role: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab PIM</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn Employee List</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của Employee List</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra c&aacute;c li&ecirc;n kết với trang web kh&aacute;c&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Li&ecirc;n kết được tới c&aacute;c trang web</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+
+
+<testcase internalid="186398" name="TestCase-007">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[167]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra số k&yacute; tự tối đa&nbsp; trường Confirm password</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o OrangeHRM với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab PIM</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>H&agrave;ng menu cấp 2 của PIM hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn Add Employee</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;M&agrave;n h&igrave;nh hiển thị chức năng của Add Employee</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Tick v&agrave;o create login details</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Nhập v&agrave;o &ocirc; confirm password cho đến khi kh&ocirc;ng nhập được nữa</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Trường comfirm password giới hạn việc nhập c&aacute;c k&yacute; tự tối đa</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="185493" name="TestCase-041">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[168]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra truy cập từ thanh Menu</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập OrangeHRM bằng t&agrave;i khoản Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>7</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Tr&ecirc;n thanh Menu trỏ chuột v&agrave;o tab PIM</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>C&aacute;c menu cấp&nbsp;hai của PIM hiện b&ecirc;n dưới tab PIM</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn Employee List</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Hiển thị danh s&aacute;ch nh&acirc;n vi&ecirc;n</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+
+<testcase internalid="186409" name="TestCase-006">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[169]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra k&iacute;ch thước căn chỉnh h&agrave;ng của c&aacute;c textbox</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o OrangeHRM với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab PIM</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>H&agrave;ng menu cấp 2 của PIM hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn Add Employee</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;M&agrave;n h&igrave;nh hiển thị chức năng của Add Employee</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra c&aacute;c label textbox c&oacute; được căn lề căn giữa kh&ocirc;ng</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>C&aacute;c label, textbox được căn giữa&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="185497" name="TestCase-034">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[170]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra việc đổi m&agrave;u khi nhấn v&agrave;o c&aacute;c&nbsp;button</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập v&agrave;o hệ thống với role: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab PIM</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn Employee List</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của Employee List</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra c&aacute;c button khi nhấn v&agrave;o</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;u của c&aacute;c button thay đổi</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+
+
+<testcase internalid="186419" name="TestCase-005">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[171]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra hiển thị khi người d&ugrave;ng tick v&agrave;o &quot;Create Login Deatails&quot; để tạo t&agrave;i khoản đăng nhập</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o OrangeHRM với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab PIM</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>H&agrave;ng menu cấp 2 của PIM hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn Add Employee</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;M&agrave;n h&igrave;nh hiển thị chức năng của Add Employee</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Click chuột v&agrave;o checkbox &quot;Create Login Details&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Hiển thị c&aacute;c trường điền th&ocirc;ng tin t&agrave;i khoản b&ecirc;n dưới</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="186430" name="TestCase-004">
+	<node_order><![CDATA[10]]></node_order>
+	<externalid><![CDATA[173]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra hiển thị th&ocirc;ng b&aacute;o lỗi khi người d&ugrave;ng kh&ocirc;ng nhập đ&uacute;ng th&ocirc;ng tin</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o OrangeHRM với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab PIM</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>H&agrave;ng menu cấp 2 của PIM hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn Add Employee</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;M&agrave;n h&igrave;nh hiển thị chức năng của Add Employee</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Click chuột v&agrave;o c&aacute;c trường bắt buộc (c&oacute; dấu *)</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Click chuột v&agrave;o c&aacute;c c&aacute;c khoảng trống hay trường kh&aacute;c</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Th&ocirc;ng b&aacute;o lỗi khi chưa nhập dữ liệu cho c&aacute;c trường bắt buộc:&nbsp;Required</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="186443" name="TestCase-003">
+	<node_order><![CDATA[11]]></node_order>
+	<externalid><![CDATA[174]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra căn giữa của c&aacute;c label textbox</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o OrangeHRM với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab PIM</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>H&agrave;ng menu cấp 2 của PIM hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn Add Employee</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;M&agrave;n h&igrave;nh hiển thị chức năng của Add Employee</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Nhập Username: &quot;ABC&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Hiển thị th&ocirc;ng b&aacute;o lỗi khi người d&ugrave;ng chưa nhập đủ 5 k&yacute; tự</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Nhập Password: &quot;12345quangAa@&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Hiển thị c&aacute;c lỗi tương ứng khi nhập xong từng k&yacute; tự Should have at least 8 characters Your password must contain a lower-case letter, an upper-case letter, a digit and a special character. Try a different password.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Nhập Confirm Password: &quot;12345quanglAa@&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Hiển thị lỗi: Passwords do not match khi chưa nhập xong</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="186455" name="TestCase-002">
+	<node_order><![CDATA[12]]></node_order>
+	<externalid><![CDATA[175]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Test case kiểm tra khi hover con trỏ &nbsp;chuột v&agrave;o c&aacute;c textbox</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o OrangeHRM với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab PIM</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>H&agrave;ng menu cấp 2 của PIM hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn Add Employee</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;M&agrave;n h&igrave;nh hiển thị chức năng của Add Employee</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Di chuyển chuột v&agrave;o c&aacute;c &ocirc; textbox</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Trang th&aacute;i con trỏ chuột sẽ biến th&agrave;nh thanh trỏ nhập&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="186460" name="TestCase-001">
+	<node_order><![CDATA[13]]></node_order>
+	<externalid><![CDATA[176]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra căn giữa của c&aacute;c label textbox</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o OrangeHRM với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab PIM</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>H&agrave;ng menu cấp 2 của PIM hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn Add Employee</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&nbsp;M&agrave;n h&igrave;nh hiển thị chức năng của Add Employee</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra c&aacute;c label textbox c&oacute; được căn lề căn giữa kh&ocirc;ng</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>C&aacute;c label, textbox được căn giữa&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite>

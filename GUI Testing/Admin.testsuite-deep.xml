@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="185593" name="Admin" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>Kiểm tra giao diện Admin</p>
+
+<p>&nbsp;</p>
+]]></details> 
+
+<testcase internalid="185594" name="TestCase-020">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[177]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra font chữ sử dụng c&oacute; nhất qu&aacute;n với c&aacute;c th&agrave;nh phần kh&ocirc;ng</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập hệ thống OrangeHRM 4.5 với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab Admin</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Giao diện chức năng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn User Managerment =&gt; User</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra font chữ, nội dung c&oacute; đồng bộ với nhau kh&ocirc;ng</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Font chữ sử dụng nhất qu&aacute;n với c&aacute;c th&agrave;nh phần</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="185599" name="TestCase-019">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[178]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra font chữ sử dụng c&oacute; nhất qu&aacute;n với c&aacute;c th&agrave;nh phần kh&ocirc;ng</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập hệ thống OrangeHRM 4.5 với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab Admin</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Giao diện chức năng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn User Managerment =&gt; User</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra font chữ, nội dung c&oacute; đồng bộ với nhau kh&ocirc;ng</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Font chữ sử dụng nhất qu&aacute;n với c&aacute;c th&agrave;nh phần</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="185604" name="TestCase-018">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[179]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra font chữ sử dụng c&oacute; nhất qu&aacute;n với c&aacute;c th&agrave;nh phần kh&ocirc;ng</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập hệ thống OrangeHRM 4.5 với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab Admin</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Giao diện chức năng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn User Managerment =&gt; User</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra font chữ, nội dung c&oacute; đồng bộ với nhau kh&ocirc;ng</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Font chữ sử dụng nhất qu&aacute;n với c&aacute;c th&agrave;nh phần</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="185609" name="TestCase-017">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[180]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra k&iacute;ch cỡ c&aacute;c&nbsp;element đ&atilde; ổn chưa tr&ecirc;n độ ph&acirc;n giải 400x700</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập hệ thống OrangeHRM 4.5 với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chỉnh k&iacute;ch cỡ tr&igrave;nh duyệt 400x700</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn tab Admin</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Giao diện chức năng của tab Admin hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Chọn User Managerment =&gt; User</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra k&iacute;ch cỡ c&aacute;c element&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>K&iacute;ch cỡ c&aacute;c element đạt y&ecirc;u cầu tối thiểu tr&ecirc;n c&aacute;c độ ph&acirc;n giải cho người d&ugrave;ng sử dụng</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="185615" name="TestCase-016">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[181]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra lỗi ch&iacute;nh tả trang User management -&gt; User&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập hệ thống OrangeHRM 4.5 với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab Admin</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Giao diện chức năng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn User Managerment =&gt; User</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra lỗi ch&iacute;nh tả của trang</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Kh&ocirc;ng d&iacute;nh&nbsp;lỗi ch&iacute;nh tả</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="185620" name="TestCase-015">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[182]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra Dropdown của User Management</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập hệ thống OrangeHRM 4.5 với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab Admin</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Giao diện chức năng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn User Managerment</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Dropdown của User Management hiển thị&nbsp;mục:&nbsp; Users</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="185624" name="TestCase-014">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[183]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra Dropdown Job</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập hệ thống OrangeHRM 4.5 với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab Admin</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Giao diện chức năng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn Job</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Hiển thị đầy đủ c&aacute;c dropdown : Job Title, Pay Grade, Employment Status, Jobs Categories, Work Shifts</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="185628" name="TestCase-013">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[184]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra Dropdown của Organization</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập hệ thống OrangeHRM 4.5 với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab Admin</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Giao diện chức năng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn Organization</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Dropdown của Organization gồm đủ c&aacute;c mục: General Information, Structure, Location</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="185632" name="TestCase-012">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[185]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra Dropdown&nbsp; Qualifications</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập hệ thống OrangeHRM 4.5 với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab Admin</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Giao diện chức năng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn&nbsp;Qualifications</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Dropdown của Qualifications gồm đủ c&aacute;c mục: Skills, Education, Licenses, Languages, Membership</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="185636" name="TestCase-011">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[186]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra Dropdown Configuration</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập hệ thống OrangeHRM 4.5 với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab Admin</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Giao diện chức năng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn&nbsp;Configuration</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Dropdown của Configuration gồm đủ c&aacute;c mục: Email&nbsp;Configuration, Email Subcriptions, Localization, Modules, Social Medial Authenticaiton, Regester OAuth Client</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="185640" name="TestCase-010">
+	<node_order><![CDATA[10]]></node_order>
+	<externalid><![CDATA[187]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>&nbsp;Kiểm tra Scrollbar&nbsp;</p>
+
+<p>&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập hệ thống OrangeHRM 4.5 với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab Admin</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Giao diện chức năng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn User Managerment =&gt; User</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>&nbsp;Kiểm tra Scrollbar</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Scrollbar xuất hiện khi số dữ liệu User lớn</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="185645" name="TestCase-009">
+	<node_order><![CDATA[11]]></node_order>
+	<externalid><![CDATA[188]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra Hover của c&aacute;c Button&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập hệ thống OrangeHRM 4.5 với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab Admin</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Giao diện chức năng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn User Managerment =&gt; User</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>D&ugrave;ng con trỏ chuột hover qua c&aacute;c Button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Button chuyển đồi m&agrave;u</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="185650" name="TestCase-008">
+	<node_order><![CDATA[12]]></node_order>
+	<externalid><![CDATA[189]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra k&iacute;ch thước của c&aacute;c Button c&oacute; đồng nhất hay kh&ocirc;ng</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập hệ thống OrangeHRM 4.5 với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab Admin</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Giao diện chức năng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn User Managerment =&gt; User</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra k&iacute;ch thước c&aacute;c Button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>K&iacute;ch thước c&aacute;c Button đồng nhất với nhau</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="185655" name="TestCase-007">
+	<node_order><![CDATA[13]]></node_order>
+	<externalid><![CDATA[190]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra viết hoa của c&aacute;c chữ c&aacute;i đầu của đầu đề hoặc đầu ti&ecirc;n của đoạn văn</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập hệ thống OrangeHRM 4.5 với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab Admin</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Giao diện chức năng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn User Managerment =&gt; User</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra viết hoa của c&aacute;c chữ c&aacute;i đầu của đầu đề hoặc đầu ti&ecirc;n của đoạn văn</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Tất cả c&aacute;c chữ c&aacute;i đầu đoạn đều được viết hoa</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="185660" name="TestCase-006">
+	<node_order><![CDATA[14]]></node_order>
+	<externalid><![CDATA[191]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra cursor của c&aacute;c link&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập hệ thống OrangeHRM 4.5 với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab Admin</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Giao diện chức năng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn User Managerment =&gt; User</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra cursor của c&aacute;c link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Trạng th&aacute;i cursor: b&igrave;nh thường, hiển thị dạng con trỏ khi hover tới link</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+<testcase internalid="185665" name="TestCase-005">
+	<node_order><![CDATA[15]]></node_order>
+	<externalid><![CDATA[192]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra c&aacute;c box trong form c&oacute; đồng bộ kh&ocirc;ng</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập hệ thống OrangeHRM 4.5 với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab Admin</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Giao diện chức năng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn User Managerment =&gt; User</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra c&aacute;c box trong form search</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>C&aacute;c box đồng bộ về k&iacute;ch thước, font chữ, m&agrave;u sắc, căn lề</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="185670" name="TestCase-004">
+	<node_order><![CDATA[16]]></node_order>
+	<externalid><![CDATA[193]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra Checkbox c&oacute; hoạt động hay kh&ocirc;ng</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập hệ thống OrangeHRM 4.5 với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab Admin</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Giao diện chức năng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn User Managerment =&gt; User</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra c&aacute;c checkbox c&oacute; hoạt động kh&ocirc;ng</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Tất cả c&aacute;c checkbox đều hoạt động</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="185675" name="TestCase-002">
+	<node_order><![CDATA[17]]></node_order>
+	<externalid><![CDATA[194]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra gợi &yacute; hỗ trợ t&igrave;m kiếm&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập hệ thống OrangeHRM 4.5 với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab Admin</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Giao diện chức năng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn User Managerment =&gt; User</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra c&aacute;c textbox Employee name, Username&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Hiển thị gợi &yacute;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+<testcase internalid="185680" name="TestCase-001">
+	<node_order><![CDATA[18]]></node_order>
+	<externalid><![CDATA[195]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Logo c&oacute; nằm tr&aacute;i tr&ecirc;n hay kh&ocirc;ng</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập hệ thống OrangeHRM 4.5 với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab Admin</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Giao diện chức năng hiện ra.<br />
+Logo nằm g&oacute;c tr&aacute;i tr&ecirc;n</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+
+<testcase internalid="186130" name="TestCase-003">
+	<node_order><![CDATA[19]]></node_order>
+	<externalid><![CDATA[196]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra font chữ sử dụng c&oacute; nhất qu&aacute;n với c&aacute;c th&agrave;nh phần kh&ocirc;ng</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đăng nhập hệ thống OrangeHRM 4.5 với rule: Admin</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Chọn tab Admin</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Giao diện chức năng hiện ra</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Chọn User Managerment =&gt; User</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra font chữ, nội dung c&oacute; đồng bộ với nhau kh&ocirc;ng</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Font chữ sử dụng nhất qu&aacute;n với c&aacute;c th&agrave;nh phần</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite>

@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="185751" name="My Info" >
+<node_order><![CDATA[0]]></node_order>
+<details><![CDATA[<p>Kiểm tra giao diện My Info</p>
+]]></details> 
+
+<testcase internalid="185752" name="TestCase-016">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[136]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra m&agrave;u sắc&nbsp; tương phản</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o trang OrangeHRM</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o tab My Info</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của tab My Info</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra m&agrave;u sắc của c&aacute;c th&agrave;nh phần trong trang web</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;u sắc văn bản phải tương phản với m&agrave;u nền để dễ đọc, r&otilde; r&agrave;ng</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="185756" name="TestCase-015">
+	<node_order><![CDATA[1]]></node_order>
+	<externalid><![CDATA[137]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra font chữ&nbsp;&nbsp;hiển thị&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o trang OrangeHRM</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o tab My Info</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của tab My Info</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra font chữ đang hiển thị trong trang</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Kich thước font chữ tr&ecirc;n thanh ti&ecirc;u đề phải lớn hơn nội dung ph&iacute;a dưới</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="185760" name="TestCase-014">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[138]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra font chữ sử dụng&nbsp; c&oacute; đồng nhất</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o trang OrangeHRM</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o tab My Info</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của tab My Info</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra font chữ đang sử dụng</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Font chữ đang sử d&ugrave;ng l&agrave; duy nhất tr&ocirc;ng trang</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="185764" name="TestCase-013">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[139]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra thanh cuộn</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o trang OrangeHRM</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o tab My Info</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của tab My Info</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Ph&oacute;ng to, thu nhỏ cửa sổ tr&igrave;nh duyệt</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Thanh cuộn ngang/dọc chỉ xuất hiện khi chiều ngang/dọc kh&ocirc;ng hiển thị hết đựoc m&agrave;n h&igrave;nh</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="185768" name="TestCase-012">
+	<node_order><![CDATA[4]]></node_order>
+	<externalid><![CDATA[140]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra th&ocirc;ng b&aacute;o&nbsp; Th&ecirc;m</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o trang OrangeHRM</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o tab My Info</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của tab My Info</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o Edit</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Nhập dữ liệu</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Nhấn n&uacute;t Add</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Hiển thị d&ograve;ng th&ocirc;ng b&aacute;o th&ecirc;m th&agrave;nh c&ocirc;ng</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="185774" name="TestCase-011">
+	<node_order><![CDATA[5]]></node_order>
+	<externalid><![CDATA[141]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra th&ocirc;ng b&aacute;o X&oacute;a khi bấm X&oacute;a</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o trang OrangeHRM</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o tab My Info</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của tab My Info</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o X&oacute;a</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>M&agrave;n h&igrave;nh hiển thị hộp thoại x&aacute;c nhận X&oacute;a</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Trường th&ocirc;ng b&aacute;o &quot; Require&quot; b&ecirc;n dưới</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Bấm n&uacute;t X&oacute;a</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Kiểm tra y&ecirc;u cầu x&aacute;c nhận x&oacute;a trước khi bấm &quot;X&oacute;a&quot;, nếu bấm &quot;X&oacute;a&quot; th&igrave; th&ocirc;ng b&aacute;o x&oacute;a th&agrave;nh c&ocirc;ng</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="185780" name="TestCase-010">
+	<node_order><![CDATA[6]]></node_order>
+	<externalid><![CDATA[145]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra th&ocirc;ng b&aacute;o X&oacute;a khi&nbsp; bấm Hủy bỏ</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o trang OrangeHRM</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o tab My Info</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của tab My Info</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o X&oacute;a</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>M&agrave;n h&igrave;nh hiển thị hộp thoại x&aacute;c nhận X&oacute;a</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Bấm n&uacute;t Hủy bỏ</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Kiểm tra y&ecirc;u cầu x&aacute;c nhận x&oacute;a&nbsp; trước khi bấm &quot;X&oacute;a&quot;, nếu bấm &quot;Hủy bỏ&quot; th&igrave; kh&ocirc;ng l&agrave;m g&igrave;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="185786" name="TestCase-009">
+	<node_order><![CDATA[7]]></node_order>
+	<externalid><![CDATA[146]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra c&aacute;c th&agrave;nh phần trang web c&oacute; đồng bộ, hiển thị r&otilde; r&agrave;ng&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o trang OrangeHRM</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o tab My Info</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của tab My Info</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra c&aacute;c th&agrave;nh phần trang web c&oacute; đồng bộ, hiển thị r&otilde; r&agrave;ng&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>C&aacute;c th&agrave;nh phần trang web c&oacute; đồng bộ, hiển thị r&otilde; r&agrave;ng&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+<testcase internalid="185790" name="TestCase-008">
+	<node_order><![CDATA[8]]></node_order>
+	<externalid><![CDATA[147]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra hiển thị th&ocirc;ng tin văn bản</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o trang OrangeHRM</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o tab My Info</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của tab My Info</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o Edit</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Nhập dữ liệu sai ch&iacute;nh tả</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>C&oacute; highlight trường văn bản phải được kiểm tra đ&uacute;ng&nbsp; ch&iacute;nh tả</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+<testcase internalid="185795" name="TestCase-007">
+	<node_order><![CDATA[9]]></node_order>
+	<externalid><![CDATA[148]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra hiển thị gợi &yacute; format&nbsp;th&ocirc;ng tin&nbsp; ng&agrave;y</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o trang OrangeHRM</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o tab My Info</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của tab My Info</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o Edit</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra trường nhập ng&agrave;y</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Hiển thị gợi &yacute; format ng&agrave;y theo định dạng yyyy-mm-dd</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+<testcase internalid="185800" name="TestCase-006">
+	<node_order><![CDATA[10]]></node_order>
+	<externalid><![CDATA[149]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>&nbsp;Kiểm tra&nbsp; c&aacute;c trường dữ liệu c&oacute; m&agrave;u sắc ph&ugrave; hợp</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o trang OrangeHRM</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o tab My Info</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của tab My Info</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra c&aacute;c trường dữ liệu c&oacute; m&agrave;u&nbsp; sắc ph&ugrave; hợp</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Trường dữ liệu c&oacute; m&agrave;u sắc ph&ugrave; hợp với tổng thể</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="185804" name="TestCase-005">
+	<node_order><![CDATA[11]]></node_order>
+	<externalid><![CDATA[150]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra c&aacute;c trường dữ liệu mặc định</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o trang OrangeHRM</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o tab My Info</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của tab My Info</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o Edit</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Kiểm tra trường dữ liệu mặc định cho c&aacute;c th&agrave;nh phần</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>C&oacute; gi&aacute; trị mặc định cho c&aacute;c trường như combo-box, lists, check box,...</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+<testcase internalid="185809" name="TestCase-004">
+	<node_order><![CDATA[12]]></node_order>
+	<externalid><![CDATA[151]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra c&aacute;c trường dữ liệu số r&agrave;ng buộc</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o trang OrangeHRM</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o tab My Info</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của tab My Info</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o Edit</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Nhập dữ liệu chữ c&aacute;i hoặc k&iacute; tự đặc biệt v&agrave;o trường số (Driver&#39;s License Number): &quot;wfewefwef&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Nhấn n&uacute;t Save</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Th&ocirc;ng b&aacute;o lỗi về trường chỉ nhập số</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="185815" name="TestCase-003">
+	<node_order><![CDATA[13]]></node_order>
+	<externalid><![CDATA[152]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra b&aacute;o lỗi khi x&oacute;a hết c&aacute;c dữ liệu trong c&aacute;c trường y&ecirc;u cầu c&oacute; dữ liệu</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o trang OrangeHRM</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o tab My Info</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của tab My Info</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o Edit</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>X&oacute;a dữ liệu trong c&aacute;c trường c&oacute; dấu * v&agrave; click con trỏ chuột ra b&ecirc;n ngo&agrave;i trương</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Trường th&ocirc;ng b&aacute;o &quot; Require&quot; b&ecirc;n dưới</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+
+<testcase internalid="185820" name="TestCase-002">
+	<node_order><![CDATA[14]]></node_order>
+	<externalid><![CDATA[153]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra độ d&agrave;i k&yacute; tự tối đa của trường dữ liệu&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o trang OrangeHRM</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o tab My Info</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của tab My Info</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o Edit</p>
+]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Nhập dữ liệu v&agrave;o &ocirc; First Name</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Độ d&agrave;i tối đa k&yacute; tự cho ph&eacute;p l&agrave; 30&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+
+<testcase internalid="185825" name="TestCase-001">
+	<node_order><![CDATA[15]]></node_order>
+	<externalid><![CDATA[154]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Kiểm tra con trỏ chuột Focus</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Đ&atilde; đăng nhập v&agrave;o trang OrangeHRM</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o tab My Info</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>M&agrave;n h&igrave;nh hiện chức năng của tab My Info</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Nhấn v&agrave;o Edit</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>C&aacute;c trường dữ liệu được enable. Con trỏ chuột focus v&agrave;o trường dữ liệu đầu ti&ecirc;n</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite>
